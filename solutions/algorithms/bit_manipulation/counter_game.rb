@@ -1,23 +1,4 @@
-# Counter Game
 # https://www.hackerrank.com/challenges/counter-game
-#
-# Louise and Richard play a game.  They have a counter set to N. Louise
-# gets the first turn and the turns alternate thereafter.  In the game,
-# they perform the following operations:
-#
-#   * If N is not a power of 2, reduce the counter by the largest power
-#     of 2 less than N.
-#   * If N is a power of 2, reduce the counter by half of N.
-#   * The resultant value is the new N which is again used for
-#     subsequent operations.
-#
-# The game ends when the counter reduces to 1, i.e., N == 1, and the
-# last person to make a valid move wins.
-#
-# Given N, your task is to find the winner of the game.
-#
-# (Visit the URL above for full problem specification.)
-
 
 def solve(n)
   # Simulating the counter is relatively straightforward and results in
@@ -41,12 +22,10 @@ def solve(n)
   turns.odd? ? 'Louise' : 'Richard'
 end
 
-
 def popcount(x)
   # very inefficient, but this is only a placeholder for a hardware op
   x.to_s(2).count('1')
 end
-
 
 def main
   t = gets.strip.to_i

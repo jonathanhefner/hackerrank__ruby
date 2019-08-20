@@ -1,24 +1,4 @@
-# Lisa's Workbook
 # https://www.hackerrank.com/challenges/lisa-workbook
-#
-# Lisa just got a new math workbook.  A workbook contains exercise
-# problems, grouped into chapters.
-#
-#   * There are n chapters in Lisa's workbook, numbered from 1 to n.
-#   * The i-th chapter has t[i] problems, numbered from 1 to t[i].
-#   * Each page can hold up to k problems.  There are no empty pages or
-#     unnecessary spaces, so only the last page of a chapter may contain
-#     fewer than k problems.
-#   * Each new chapter starts on a new page, so a page will never
-#     contain problems from more than one chapter.
-#   * The page number indexing starts at 1.
-#
-# Lisa believes a problem to be special if its index (within a chapter)
-# is the same as the page number where it's located.  Given the details
-# for Lisa's workbook, can you count its number of special problems?
-#
-# (Visit the URL above for full problem specification.)
-
 
 def solve(k, t)
   # Of the few dozen solutions I examined after submitting, all used
@@ -67,7 +47,6 @@ def solve(k, t)
       ((s % k == 1 && s > 1 && s <= (problems + 1)) ? 1 : 0)
   end.reduce(&:+)
 end
-
 
 def main()
   n, k = gets.strip.split(' ').map(&:to_i)

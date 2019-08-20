@@ -1,12 +1,4 @@
-# Divisible Sum Pairs
 # https://www.hackerrank.com/challenges/divisible-sum-pairs
-#
-# You are given an array of n integers, a[0] ... a[n - 1], and a
-# positive integer, k.  Find and print the number of (i, j) pairs where
-# i < j and a[i] + a[j] is evenly divisible by k.
-#
-# (Visit the URL above for full problem specification.)
-
 
 def solve(a, k)
   # This problem is very similar to "Non-Divisible Subset" (see
@@ -43,12 +35,10 @@ def solve(a, k)
   answer
 end
 
-
 def choose2(n)
   # n! / (k! * (n - k)!)
   n * (n - 1) / 2
 end
-
 
 def main()
   n, k = gets.strip.split(' ').map(&:to_i)

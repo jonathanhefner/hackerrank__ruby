@@ -1,13 +1,4 @@
-# Bigger is Greater
 # https://www.hackerrank.com/challenges/bigger-is-greater
-#
-# Given a word w, rearrange the letters of w to construct another word s
-# in such a way that s is lexicographically greater than w.  In case of
-# multiple possible answers, find the lexicographically smallest one
-# among them.
-#
-# (Visit the URL above for full problem specification.)
-
 
 def solve(w)
   # Because we are interested in the lexicographically smallest of
@@ -42,7 +33,6 @@ def solve(w)
 
   head + tail.join
 end
-
 
 def main()
   t = gets.strip.to_i

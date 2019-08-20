@@ -1,12 +1,4 @@
-# Non-Divisible Subset
 # https://www.hackerrank.com/challenges/non-divisible-subset
-#
-# Given a set, S, of n distinct integers, print the size of a maximal
-# subset, S', of S where the sum of any 2 numbers in S' are not evenly
-# divisible by k.
-#
-# (Visit the URL above for full problem specification.)
-
 
 def solve(a, k)
   # This solution is based on the property:
@@ -39,7 +31,6 @@ def solve(a, k)
 
   answer
 end
-
 
 def main()
   n, k = gets.strip.split(' ').map(&:to_i)

@@ -1,11 +1,4 @@
-# Maximizing XOR
 # https://www.hackerrank.com/challenges/maximizing-xor
-#
-# Given two integers, L and R, find the maximal value of A xor B, where
-# A and B satisfy the following condition: L <= A <= B <= R.
-#
-# (Visit the URL above for full problem specification.)
-
 
 def solve(l, r)
   # Almost all of the solutions I examined after submitting used a brute
@@ -28,7 +21,6 @@ def solve(l, r)
   f += 1 while (l >> f) != (r >> f)
   (1 << f) - 1
 end
-
 
 def main()
   l = gets.strip.to_i
