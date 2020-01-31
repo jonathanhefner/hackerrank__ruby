@@ -1,4 +1,4 @@
-# HackerRank (Ruby)
+# HackerRank Solutions in Ruby
 
 > Physics disgusts me a little bit now, but I used to enjoy doing
 > physics.  Why did I enjoy it?  I used to *play* with it.  I used to do
